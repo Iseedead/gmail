@@ -9,11 +9,11 @@ public class EmptyErrorTest extends AbstractTest {
     public void emptySubFieldsTest() {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.subFieldsFill("LastName", "FirstName");
-        Assert.assertEquals(mailCreatorPage.firstNameError.getText(), mailCreatorPage.emptyErrorExpected);
+        Assert.assertEquals(mailCreatorPage.FIRST_NAME_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
         mailCreatorPage.subFieldsFill("BirthYear", "BirthDay");
-        Assert.assertEquals(mailCreatorPage.birthDayError.getText(), mailCreatorPage.emptyErrorExpected);
+        Assert.assertEquals(mailCreatorPage.BIRTH_DAY_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
         mailCreatorPage.subFieldsFill("BirthDay", "BirthMonth");
-        Assert.assertEquals(mailCreatorPage.birthMonthError.getText(), mailCreatorPage.emptyErrorExpected);
+        Assert.assertEquals(mailCreatorPage.BIRTH_MONTH_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
     }
 
     @Test
@@ -21,11 +21,11 @@ public class EmptyErrorTest extends AbstractTest {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.submitButton();
         //EmptyErrors
-        Assert.assertEquals(mailCreatorPage.lastNameError.getText(), mailCreatorPage.emptyErrorExpected);
-        Assert.assertEquals(mailCreatorPage.gmailError.getText(), mailCreatorPage.emptyErrorExpected);
-        Assert.assertEquals(mailCreatorPage.passwdError.getText(), mailCreatorPage.emptyErrorExpected);
-        Assert.assertEquals(mailCreatorPage.passwdAgainError.getText(), mailCreatorPage.emptyErrorExpected);
-        Assert.assertEquals(mailCreatorPage.birthYearError.getText(), mailCreatorPage.emptyErrorExpected);
-        Assert.assertEquals(mailCreatorPage.genderError.getText(), mailCreatorPage.emptyErrorExpected);
+        Assert.assertEquals(mailCreatorPage.LAST_NAME_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
+        Assert.assertEquals(mailCreatorPage.GMAIL_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
+        Assert.assertEquals(mailCreatorPage.PASSWD_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
+        Assert.assertEquals(mailCreatorPage.PASSWD_AGAIN_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
+        Assert.assertEquals(mailCreatorPage.BIRTH_YEAR_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
+        Assert.assertEquals(mailCreatorPage.GENDER_ERROR.getText(), mailCreatorPage.EMPTY_ERROR_EXP);
     }
 }

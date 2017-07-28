@@ -8,8 +8,8 @@ public class BirthErrorsTest extends AbstractTest {
     public void birthErrorsTest() throws InterruptedException {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.birthDayError();
-        Assert.assertEquals(mailCreatorPage.birthDayError.getText(), mailCreatorPage.birthDayErrorExpected);
+        Assert.assertEquals(mailCreatorPage.BIRTH_DAY_ERROR.getText(), mailCreatorPage.BIRTH_DAY_ERROR_EXP);
         mailCreatorPage.birthYearError();
-        Assert.assertEquals(mailCreatorPage.birthYearError.getText(), mailCreatorPage.birthYearErrorExpected);
+        Assert.assertEquals(mailCreatorPage.BIRTH_YEAR_ERROR.getText(), mailCreatorPage.BIRTH_YEAR_ERROR_EXP);
     }
 }

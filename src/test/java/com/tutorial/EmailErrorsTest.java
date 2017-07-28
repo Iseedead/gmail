@@ -8,6 +8,6 @@ public class EmailErrorsTest extends AbstractTest {
     private void emailErrorsTest(String wrongInput, String expectedError) throws InterruptedException {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.emailErrors(wrongInput);
-        Assert.assertEquals(mailCreatorPage.gmailError.getText(), expectedError);
+        Assert.assertEquals(mailCreatorPage.GMAIL_ERROR.getText(), expectedError);
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="GoogleValidation" verbose="1" parallel="false" thread-count="19">
+<suite name="GoogleValidation" verbose="1" parallel="methods" thread-count="20">
     <test name="GoogleMailCreationTest">
         <classes>
             <class name="com.tutorial.EmptyErrorTest">

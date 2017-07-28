@@ -1,15 +1,16 @@
 package com.tutorial;
 
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import static Util.DriverWrapper.getDriver;
+import static Util.DriverWrapper.nullDriver;
 
 public abstract class AbstractTest {
 
     @BeforeMethod
     public void preCondition() {
-        //path to the email registration page
+        //path to the gmail registration page
         getDriver().get("https://www.google.com");
         GoogleMainPage googleMainPage = new GoogleMainPage();
         googleMainPage.googleIt("gmail");
@@ -17,8 +18,9 @@ public abstract class AbstractTest {
         goToRegistrationPage.createMailButton();
     }
 
-    @AfterTest
+    @AfterMethod
     public void postCondition() {
-        getDriver().quit();
+        System.out.println("After Test");
+        nullDriver();
     }
 }

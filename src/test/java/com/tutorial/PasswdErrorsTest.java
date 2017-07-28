@@ -8,7 +8,7 @@ public class PasswdErrorsTest extends AbstractTest {
     public void passwdErrorsTest(String wrongInput, String expectedError) throws InterruptedException {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.passwdErrors(wrongInput);
-        Assert.assertEquals(mailCreatorPage.passwdError.getText(), expectedError);
-        Assert.assertEquals(mailCreatorPage.passwdAgainError.getText(), mailCreatorPage.passwdMatchErrorExpected);
+        Assert.assertEquals(mailCreatorPage.PASSWD_ERROR.getText(), expectedError);
+        Assert.assertEquals(mailCreatorPage.PASSWD_AGAIN_ERROR.getText(), mailCreatorPage.PASSWD_MATCH_ERROR_EXP);
     }
 }

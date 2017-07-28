@@ -8,6 +8,6 @@ public class RecoveryMailErrorsTest extends AbstractTest {
     public void recoveryMailErrorsTest(String wrongInput, String expectedError) {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.recoveryMail(wrongInput);
-        Assert.assertEquals(mailCreatorPage.recoveryMailError.getText(), expectedError);
+        Assert.assertEquals(mailCreatorPage.REC_MAIL_ERROR.getText(), expectedError);
     }
 }
