@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GoogleValidation" verbose="1" parallel="false" thread-count="19">
+    <test name="GoogleMailCreationTest">
+        <classes>
+            <class name="com.tutorial.EmptyErrorTest">
+                <methods>
+                    <include name="emptyErrorsTest"/>
+                    <include name="emptySubFieldsTest"/>
+                </methods>
+            </class>
+            <class name="com.tutorial.EmailErrorsTest">
+                <methods>
+                    <include name="emailErrorsTest"/>
+                </methods>
+            </class>
+            <class name="com.tutorial.PasswdErrorsTest">
+                <methods>
+                    <include name="passwdErrorsTest"/>
+                </methods>
+            </class>
+            <class name="com.tutorial.BirthErrorsTest">
+                <methods>
+                    <include name="birthdayErrorsTest"/>
+                </methods>
+            </class>
+            <class name="com.tutorial.MobErrorsTest">
+                <methods>
+                    <include name="mobErrorTest"/>
+                </methods>
+            </class>
+            <class name="com.tutorial.RecoveryMailErrorsTest">
+                <methods>
+                    <include name="recoveryMailErrorsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
