@@ -20,7 +20,6 @@ public abstract class AbstractTest {
 
     @AfterMethod
     public void postCondition() {
-        System.out.println("After Test");
         nullDriver();
     }
 }

@@ -7,30 +7,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
-
 import static Util.DriverWrapper.getDriver;
+
 public class MailCreatorPage extends BaseStuff {
     //Elements
     @CacheLookup @FindBy(id = "submitbutton") private WebElement submitButton;
     @CacheLookup @FindBy(id = "GmailAddress") private WebElement gmailAddress;
     @CacheLookup @FindBy(id = "Passwd") private WebElement pwd;
     @CacheLookup @FindBy(id = "PasswdAgain") private WebElement pwd2;
-    @CacheLookup @FindBy(id = "BirthMonth") private WebElement birthMon;    //vot tak namano
+    @CacheLookup @FindBy(id = "BirthMonth") private WebElement birthMon;
     @CacheLookup @FindBy(id = "BirthDay") private WebElement birthDa;
     @CacheLookup @FindBy(id = "BirthYear") private WebElement birthYea;
     @CacheLookup @FindBy(id = "RecoveryPhoneNumber") private WebElement mobile;
     @CacheLookup @FindBy(id = "RecoveryEmailAddress") private WebElement recMail;
-    //Errors
 
-    private final By FIRST_NAME_ERROR_SELECTOR = By.id("errormsg_0_FirstName");
-    private final By LAST_NAME_ERROR_SELECTOR = By.id("errormsg_0_LastName");
     private final By GMAIL_ERROR_SELECTOR = By.id("errormsg_0_GmailAddress");
     private final By PASSWD_ERROR_SELECTOR = By.id("errormsg_0_Passwd");
     private final By PASSWD_AGAIN_ERROR_SELECTOR = By.id("errormsg_0_PasswdAgain");
-    private final By BIRTH_MONTH_ERROR_SELECTOR = By.id("errormsg_0_BirthMonth");
     private final By BIRTH_DAY_ERROR_SELECTOR = By.id("errormsg_0_BirthDay");
     private final By BIRTH_YEAR_ERROR_SELECTOR = By.id("errormsg_0_BirthYear");
-    private final By GENDER_ERROR_SELECTOR = By.id("errormsg_0_Gender");
     private final By MOB_ERROR_SELECTOR = By.id("errormsg_0_RecoveryPhoneNumber");
     private final By REC_MAIL_ERROR_SELECTOR = By.id("errormsg_0_RecoveryEmailAddress");
 
@@ -42,7 +37,7 @@ public class MailCreatorPage extends BaseStuff {
             "Be sure to use your actual date of birth.";
     final String MOB_ERROR_EXP = "This phone number format is not recognized. " +
             "Please check the country and number.";
-
+    //Errors
     @CacheLookup @FindBy(id = "errormsg_0_FirstName") WebElement FIRST_NAME_ERROR;
     @CacheLookup @FindBy(id = "errormsg_0_LastName") WebElement LAST_NAME_ERROR;
     @CacheLookup @FindBy(id = "errormsg_0_GmailAddress") WebElement GMAIL_ERROR;
@@ -54,9 +49,6 @@ public class MailCreatorPage extends BaseStuff {
     @CacheLookup @FindBy(id = "errormsg_0_Gender") WebElement GENDER_ERROR;
     @CacheLookup @FindBy(id = "errormsg_0_RecoveryPhoneNumber") WebElement REC_PHONE_ERROR;
     @CacheLookup @FindBy(id = "errormsg_0_RecoveryEmailAddress") WebElement REC_MAIL_ERROR;
-
-
-
 
     void submitButton() {
         submitButton.submit();
@@ -98,7 +90,7 @@ public class MailCreatorPage extends BaseStuff {
         waitUntil(REC_MAIL_ERROR_SELECTOR);
     }
 
-    public void subFieldsFill(String id, String errorIn) {
+    void subFieldsFill(String id, String errorIn) {
         getDriver().findElement(By.id(id)).sendKeys("15");
         submitButton();
         waitUntil(By.id("errormsg_0_" + errorIn));
