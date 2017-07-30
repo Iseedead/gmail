@@ -5,6 +5,8 @@ package Util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.opera.OperaOptions;
 
 import java.io.File;
 import java.net.URI;
@@ -52,6 +54,13 @@ public class DriverWrapper {
             case "gecko": {
                 System.setProperty("webdriver.gecko.driver", driverPath);
                 driverlol = new FirefoxDriver();
+                break;
+            }
+            case "opera": {
+                System.setProperty("webdriver.opera.driver", driverPath);
+                OperaOptions operaPath = new OperaOptions();
+                operaPath.setBinary("/usr/bin/opera");
+                driverlol = new OperaDriver(operaPath);
                 break;
             }
         }

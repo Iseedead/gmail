@@ -12,12 +12,10 @@ public class GoToRegistrationPage extends BaseStuff {
 
     void createMailButton() {
         try {
-            desktopButton.click();                  //if window size > 1360px (desktop mode)
+            desktopButton.click();                  //if window size > 1360px (desktop mod  e)
         } catch (ElementNotVisibleException e) {
             mobileButton.click();                   //if window size < 1360px (mobile mode)
         }
         tabs();
     }
 }
-
-
