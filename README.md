@@ -1,4 +1,4 @@
-# gmail
+# gmail valid creation
 Testing valid gmail creation using WebDriver
 
 mvn -Dbrowser=chrome/gecko/opera -Dtestcheck=true/false clean install
