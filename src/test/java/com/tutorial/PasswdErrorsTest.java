@@ -1,6 +1,6 @@
 package com.tutorial;
 
-import org.testng.Assert;
+import Util.TestCheck.TestCheck;
 import org.testng.annotations.Test;
 
 public class PasswdErrorsTest extends AbstractTest {
@@ -8,7 +8,7 @@ public class PasswdErrorsTest extends AbstractTest {
     public void passwdErrorsTest(String wrongInput, String expectedError) throws InterruptedException {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.passwdErrors(wrongInput);
-        Assert.assertEquals(mailCreatorPage.PASSWD_ERROR.getText(), expectedError);
-        Assert.assertEquals(mailCreatorPage.PASSWD_AGAIN_ERROR.getText(), mailCreatorPage.PASSWD_MATCH_ERROR_EXP);
+        TestCheck.assertEquals(mailCreatorPage.PASSWD_ERROR.getText(), expectedError);
+        TestCheck.assertEquals(mailCreatorPage.PASSWD_AGAIN_ERROR.getText(), mailCreatorPage.PASSWD_MATCH_ERROR_EXP);
     }
 }

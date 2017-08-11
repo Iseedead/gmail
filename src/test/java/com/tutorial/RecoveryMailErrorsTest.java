@@ -1,6 +1,6 @@
 package com.tutorial;
 
-import org.testng.Assert;
+import Util.TestCheck.TestCheck;
 import org.testng.annotations.Test;
 
 public class RecoveryMailErrorsTest extends AbstractTest {
@@ -8,6 +8,6 @@ public class RecoveryMailErrorsTest extends AbstractTest {
     public void recoveryMailErrorsTest(String wrongInput, String expectedError) {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.recoveryMail(wrongInput);
-        Assert.assertEquals(mailCreatorPage.REC_MAIL_ERROR.getText(), expectedError);
+        TestCheck.assertEquals(mailCreatorPage.REC_MAIL_ERROR.getText(), expectedError);
     }
 }

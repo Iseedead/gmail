@@ -1,6 +1,6 @@
 package com.tutorial;
 
-import org.testng.Assert;
+import Util.TestCheck.TestCheck;
 import org.testng.annotations.Test;
 
 public class EmailErrorsTest extends AbstractTest {
@@ -8,6 +8,6 @@ public class EmailErrorsTest extends AbstractTest {
     private void emailErrorsTest(String wrongInput, String expectedError) throws InterruptedException {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.emailErrors(wrongInput);
-        Assert.assertEquals(mailCreatorPage.GMAIL_ERROR.getText(), expectedError);
+        TestCheck.assertEquals(mailCreatorPage.GMAIL_ERROR.getText(), expectedError);
     }
 }

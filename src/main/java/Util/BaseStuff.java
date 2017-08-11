@@ -25,8 +25,9 @@ public abstract class BaseStuff {
         try {
             getDriver().switchTo().window(handles.get(handles.size() - 1));
         } catch (NoSuchWindowException e) {
+            System.out.println("Caught" + e);
             getDriver().switchTo().window(handles.get(1));
         }
-        waitUntil(By.tagName("body")); //createaccount
+        waitUntil(By.tagName("body")); //wait to createaccount tab is displayed
     }
 }

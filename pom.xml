@@ -22,6 +22,7 @@
                 <configuration>
                     <systemPropertyVariables>
                         <browser>${browser}</browser>
+                        <testcheck>${testcheck}</testcheck>
                         <buildDirectory>${project.build.directory}</buildDirectory>
                     </systemPropertyVariables>
                 </configuration>
@@ -47,6 +48,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <browser>chrome</browser>
+    <testcheck>false</testcheck>
   </properties>
 
   <dependencies>

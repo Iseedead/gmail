@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checks>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.PasswdErrorsTest">
+        <actual>Short passwords are easy to guess. Try one with at least 8 characters.</actual>
+        <expected>Short passwords are easy to guess. Try one with at least 8 characters.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>Please use between 6 and 30 characters.</actual>
+        <expected>Please use between 6 and 30 characters.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.PasswdErrorsTest">
+        <actual>These passwords don't match. Try again?</actual>
+        <expected>These passwords don't match. Try again?</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.RecoveryMailErrorsTest">
+        <actual>A fan of the @ sign! But please use only one in the email address.</actual>
+        <expected>A fan of the @ sign! But please use only one in the email address.</expected>
+    </check>
+    <check testname="com.tutorial.MobErrorsTest">
+        <actual>This phone number format is not recognized. Please check the country and number.</actual>
+        <expected>This phone number format is not recognized. Please check the country and number.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.EmptyErrorTest">
+        <actual>You can't leave this empty.</actual>
+        <expected>You can't leave this empty.</expected>
+    </check>
+    <check testname="com.tutorial.BirthErrorsTest">
+        <actual>Hmm, the day doesn't look right. Be sure to use a 2-digit number that is a day of the month.</actual>
+        <expected>Hmm, the day doesn't look right. Be sure to use a 2-digit number that is a day of the month.</expected>
+    </check>
+    <check testname="com.tutorial.BirthErrorsTest">
+        <actual>Hmm, the date doesn't look right. Be sure to use your actual date of birth.</actual>
+        <expected>Hmm, the date doesn't look right. Be sure to use your actual date of birth.</expected>
+    </check>
+    <check testname="com.tutorial.RecoveryMailErrorsTest">
+        <actual>This email address is not valid.</actual>
+        <expected>This email address is not valid.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>Please use only letters (a-z), numbers, and periods.</actual>
+        <expected>Please use only letters (a-z), numbers, and periods.</expected>
+    </check>
+    <check testname="com.tutorial.PasswdErrorsTest">
+        <actual>Common words are easy to guess. Try again?</actual>
+        <expected>Common words are easy to guess. Try again?</expected>
+    </check>
+    <check testname="com.tutorial.PasswdErrorsTest">
+        <actual>These passwords don't match. Try again?</actual>
+        <expected>These passwords don't match. Try again?</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>This email address already corresponds to a Google Account. Please sign in or, if you forgot your password, reset it.</actual>
+        <expected>This email address already corresponds to a Google Account. Please sign in or, if you forgot your password, reset it.</expected>
+    </check>
+    <check testname="com.tutorial.RecoveryMailErrorsTest">
+        <actual>Your email address contains the invalid domain name 'ad'.</actual>
+        <expected>Your email address contains the invalid domain name 'ad'.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>A fan of punctuation! Alas, usernames can't have consecutive periods.</actual>
+        <expected>A fan of punctuation! Alas, usernames can't have consecutive periods.</expected>
+    </check>
+    <check testname="com.tutorial.RecoveryMailErrorsTest">
+        <actual>Enter your full email address, including the '@'.</actual>
+        <expected>Enter your full email address, including the '@'.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>That username is taken. Try another.</actual>
+        <expected>That username is taken. Try another.</expected>
+    </check>
+    <check testname="com.tutorial.RecoveryMailErrorsTest">
+        <actual>Don't forget the part after the '@'.</actual>
+        <expected>Don't forget the part after the '@'.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>The last character of your username should be a letter (a-z) or number.</actual>
+        <expected>The last character of your username should be a letter (a-z) or number.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>The first character of your username should be a letter (a-z) or number.</actual>
+        <expected>The first character of your username should be a letter (a-z) or number.</expected>
+    </check>
+    <check testname="com.tutorial.EmailErrorsTest">
+        <actual>That looks like your email address. You can enter that below. Choose a new Google username (which will also be your new gmail.com address).</actual>
+        <expected>That looks like your email address. You can enter that below. Choose a new Google username (which will also be your new gmail.com address).</expected>
+    </check>
+</checks>

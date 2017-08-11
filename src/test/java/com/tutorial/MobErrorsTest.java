@@ -1,6 +1,6 @@
 package com.tutorial;
 
-import org.testng.Assert;
+import Util.TestCheck.TestCheck;
 import org.testng.annotations.Test;
 
 public class MobErrorsTest extends AbstractTest {
@@ -8,6 +8,6 @@ public class MobErrorsTest extends AbstractTest {
     public void mobErrorTest() {
         MailCreatorPage mailCreatorPage = new MailCreatorPage();
         mailCreatorPage.mobError();
-        Assert.assertEquals(mailCreatorPage.REC_PHONE_ERROR.getText(), mailCreatorPage.MOB_ERROR_EXP);
+        TestCheck.assertEquals(mailCreatorPage.REC_PHONE_ERROR.getText(), mailCreatorPage.MOB_ERROR_EXP);
     }
 }
